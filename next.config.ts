@@ -3,7 +3,7 @@ export default {
     ppr: true,
     inlineCss: true,
     useCache: true,
-    reactOwnerStack: true,
+    // reactOwnerStack: true,
     newDevOverlay: true
   },
   images: {

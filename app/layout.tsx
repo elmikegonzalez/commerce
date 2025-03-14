@@ -7,6 +7,8 @@ import { ReactNode } from 'react';
 import { Toaster } from 'sonner';
 import './globals.css';
 import { baseUrl } from 'lib/utils';
+import LyticsAnalytics from "components/data/lyticsanalytics";
+import Analytics from "components/analytics/analytics";
 
 const { SITE_NAME } = process.env;
 
@@ -37,6 +39,8 @@ export default async function RootLayout({
           <Navbar />
           <main>
             {children}
+            <Analytics />
+            <LyticsAnalytics />
             <Toaster closeButton />
             <WelcomeToast />
           </main>
